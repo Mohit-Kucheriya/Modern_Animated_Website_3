@@ -1,0 +1,387 @@
+@font-face {
+  font-family: Nregular;
+  src: url(Fonts/nimbus-sans-l_regular.ttf);
+}
+
+@font-face {
+  font-family: Nitalic;
+  src: url(Fonts/nimbus-sans-l_italic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Nregular;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main {
+  width: 100%;
+  user-select: none;
+}
+
+#nav {
+  position: relative;
+  width: 100%;
+  padding: 3vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav ul li {
+  list-style: none;
+}
+
+#nav ul li a {
+    display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8vw;
+  text-transform: uppercase;
+}
+
+#nav #nav-left ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5vw;
+}
+
+#nav #center-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1vw;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#hero {
+  width: 100%;
+  margin-top: 20vh;
+  padding: 0vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero #hero-one {
+  width: 13vw;
+}
+
+#hero #hero-one h5 {
+  font-size: 0.9vw;
+  font-weight: 400;
+  margin-bottom: 1vh;
+}
+
+#hero #hero-one h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+#hero #hero-one h3:nth-child(3) {
+  font-family: Nitalic;
+  font-weight: 600;
+}
+
+#hero #hero-one #hero-one-img {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1vh;
+}
+
+#hero-one-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero #hero-two {
+  position: relative;
+  width: 30vw;
+  min-height: 80vh;
+}
+
+#hero #hero-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero #hero-two p {
+  font-size: 1.2vw;
+  width: 40%;
+  font-family: Nitalic;
+}
+
+#hero-two #hero-two-heading {
+  position: absolute;
+  top: -12%;
+  left: -22%;
+}
+
+#hero-two #hero-two-heading h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.3vw;
+}
+
+#hero-two #hero-two-heading h1:nth-child(2) {
+  font-family: Nitalic;
+  font-weight: 600;
+}
+
+#hero-three {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+}
+
+#hero-three #circleh {
+  width: 3vw;
+  height: 3vw;
+  border: 1px solid #0000005d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-three #circleh i {
+  color: #0000005d;
+}
+
+#hero-three h3 {
+  font-size: 0.8vw;
+  color: #000;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#motive {
+  padding: 3vw 10vw;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#motive h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+#motive p {
+  width: 80%;
+  text-align: right;
+  font-size: 2vw;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+  font-family: Nitalic;
+}
+
+#motive p span {
+  display: inline-block;
+  border-radius: 100px;
+  margin: 0 0.5vw;
+  margin-bottom: -1.25vh;
+  background-size: cover;
+}
+
+#motive #onespan {
+  width: 4vw;
+  height: 4.5vh;
+  background-image: url(images/bluegirl.jpg);
+  background-position: center;
+}
+
+#motive #twospan {
+  width: 5.2vw;
+  height: 5.2vh;
+  background-image: url(images/shaljam.jpg);
+  background-position: 0 48%;
+}
+
+#motive #threespan {
+  width: 4vw;
+  height: 4.5vh;
+  background-image: url(images/grass.jpg);
+  background-position: center;
+}
+
+#picture {
+  padding: 3vw;
+  padding-left: 14vw;
+  padding-right: 12vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#first-pic {
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+#first-pic h3 {
+  font-size: 1.25vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 1vh;
+  font-family: Nitalic;
+}
+
+#first-pic .first-pic-img {
+  width: 100%;
+  height: 50vh;
+}
+
+.first-pic-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#second-pic {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+#second-pic h3 {
+  font-size: 1.25vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 1vh;
+  font-family: Nitalic;
+  text-align: right;
+}
+
+#second-pic .second-pic-img {
+  width: 100%;
+  height: 80vh;
+}
+
+.second-pic-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#banner {
+  width: 100%;
+  padding: 3vw 0;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+#banner #banner-left {
+  width: 65%;
+  height: 70vh;
+  background-color: red;
+}
+
+#banner-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 72%;
+}
+
+#banner-right {
+  width: 35%;
+  padding: 0 2vw;
+}
+
+#banner-right h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.3vw;
+}
+
+#banner-right h1:nth-child(2) {
+  font-family: Nitalic;
+  font-weight: 600;
+}
+
+#future {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#future video {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#ftext {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vh;
+  z-index: 999;
+  padding: 2vw 4vw;
+  background-color: #fff;
+  border-radius: 1vw;
+}
+
+#ftext h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 1vh;
+  text-align: right;
+}
+
+#ftext button {
+  padding: 1vh 1.2vw;
+  font-size: 0.9vw;
+  border-radius: 100px;
+  border: 1px solid #0000005d;
+  cursor: pointer;
+}
+ 
